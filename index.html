@@ -20,6 +20,10 @@
 		text-align: center;
 	}
 	
+	textarea {
+ 		resize: none;
+	}
+	
 	td:hover {background-color: #f5f5f5;}
 
 </style>
@@ -123,10 +127,10 @@
 
 	<div class="contact">
 		<h1 style ="text-align: left">contact</h1>
-		<form style="width: 100%">
-           	<input type="text" id="contactName" placeholder="name" required><br>
-           	<input type="email" id="contactEmail" placeholder="email" required><br>
-       	    <textarea id="msg" name="contactMsg" placeholder="message" required></textarea><br>
+		<form>
+           	<input type="text" id="contactName" placeholder="name" style="width: 100%" required ><br>
+           	<input type="email" id="contactEmail" placeholder="email" style="width: 100%" required><br>
+       	    <textarea id="msg" name="contactMsg" placeholder="message" style="width: 100%" required></textarea><br>
             <input type="submit" value="send"/>
 		</form>
 		
