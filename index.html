@@ -29,38 +29,6 @@
 <header>
 <title> audio mixing mastering production synthesis modular vinyl electronic digital </title>
 
-<script>
-
-    let saveFile = () => {    	
-    	const name = document.getElementById('contactName');
-        const email = document.getElementById('contactEmail');
-        const msg = document.getElementById('contactMsg');
-        
-        let data = 
-            '\r Name: ' + name.value + ' \r\n ' + 
-            'Email: ' + email.value + ' \r\n ' + 
-            'Message: ' + msg.value;
-
-        const textToBLOB = new Blob([data], { type: 'text/plain' });
-        const sFileName = 'formData.txt';	   // The file to save the data.
-
-        let newLink = document.createElement("a");
-        newLink.download = sFileName;
-
-        if (window.webkitURL != null) {
-            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-        }
-        else {
-            newLink.href = window.URL.createObjectURL(textToBLOB);
-            newLink.style.display = "none";
-            document.body.appendChild(newLink);
-        }
-
-        newLink.click(); 
-    }
-    
-</script>
-
 </header>
 
 
