@@ -2,7 +2,6 @@
 
 <html>
 <style>	
-
 	body{
  	 	text-align:center;
 	    font-family: verdana;
@@ -29,8 +28,9 @@
  		outline: none;
 	}
 	
-	td:hover {background-color: #f5f5f5;}
-
+	td:hover {
+		background-color: #f5f5f5;
+		}
 </style>
 
 <header>
@@ -119,13 +119,11 @@
       				   "wtEmbedLanguage": "en"
   					 }
   				</script>
-			</div>
-			
+			</div>		
 			<script async src="https://prod-embed-cdn.wetransfer.net/v1/latest.js"></script>
 			<!--
  			 The next input element will hold the transfer link. For testing purposes, you
- 			 could change the type attribute to "text", instead of "hidden".
-			-->
+ 			 could change the type attribute to "text", instead of "hidden".-->
 			<input type="hidden" name="wt_embed_output" class="wt_embed_output" />
 		</form>
 	</div>
@@ -133,8 +131,8 @@
 
 	<div class="contact">
 		<h1 style ="text-align: left">contact</h1>
-		<form action="formData.txt" method="post">
 		
+		<form action="formData.txt" method="post">
            	<input type="text" id="contactName" placeholder="name" style="width: 99%" required >
            	<br>
            	<input type="email" id="contactEmail" placeholder="email" style="width: 99%" required>
@@ -142,11 +140,10 @@
        	    <textarea id="msg" name="contactMsg" placeholder="message" style="width: 99%" rows="10" required></textarea>
        	    <br>
             <input type="button" value="send" style="float: right"/>
-		</form>
-		
-	</div>				
+		</form>	
+	</div>
+					
 </body>
-
 </html>
 
 
