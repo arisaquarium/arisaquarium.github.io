@@ -31,9 +31,9 @@
 <script>
 
     let saveFile = () => {    	
-    	const name = document.getElementById('txtName');
-        const email = document.getElementById('txtEmail');
-        const msg = document.getElementById('msg');
+    	const name = document.getElementById('contactName');
+        const email = document.getElementById('contactEmail');
+        const msg = document.getElementById('contactMsg');
         
         let data = 
             '\r Name: ' + name.value + ' \r\n ' + 
@@ -156,9 +156,9 @@
 	<div class="contact" style="text-align:left">
 		<h1>contact</h1>
 			<form>
-            	<input type="text" id="txtName" placeholder="name" required/>
-            	<input type="text" id="txtEmail" placeholder="email address" required/>
-        	    <textarea id="msg" name="msg" placeholder="message" style="height:100px" required></textarea>
+            	<input type="text" id="contactName" placeholder="name" required/>
+            	<input type="text" id="contactEmail" placeholder="email address" required/>
+        	    <textarea id="msg" name="contactMsg" placeholder="message" style="height:100px" required></textarea>
     	        <input type="button" id="bt" value="send" onclick="saveFile()" />
 			</form>
 		
