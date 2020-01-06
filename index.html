@@ -77,12 +77,18 @@
 	<div class="container-fluid">
 		<h1 style="text-align: left">upload</h1>	
 		<form>
-			<div data-widget-host="habitat" id="wt_embed"><div class="wt_embed_wrapper wt_embed_wrapper--error"><img class="wt_embed__icon wt_embed__icon--error" src="https://prod-embed-cdn.wetransfer.net/v1/error.15687cfd538c890b57ec62d76f8c8d11.svg"><div class="wt_embed__message"><div class="main">Something went wrong</div><div class="sub">We don't recognize this domain. Please check your configuration.</div></div></div></div>		
-			<script async="" src="https://prod-embed-cdn.wetransfer.net/v1/latest.js"></script>
-			<!--
- 			 The next input element will hold the transfer link. For testing purposes, you
- 			 could change the type attribute to "text", instead of "hidden".-->
-			<input type="hidden" name="wt_embed_output" class="wt_embed_output">
+            <div data-widget-host="habitat" id="wt_embed">
+                <script type="text/props">
+                {
+                    "wtEmbedKey": "24776219-b50e-40a7-8bf9-ed3bdd9f0664",
+                    "wtEmbedOutput": ".wt_embed_output",
+                    "wtEmbedLanguage": "en"
+                }
+                </script>
+            </div>
+            <script async src="https://prod-embed-cdn.wetransfer.net/v1/latest.js"></script>
+               <!--The next input element will hold the transfer link. For testing purposes, you could change the type attribute to "text", instead of "hidden".-->
+            <input type="text" name="wt_embed_output" class="wt_embed_output" />
 		</form>
 	</div>
 	
